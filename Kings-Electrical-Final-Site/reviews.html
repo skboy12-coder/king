@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Reviews — Kings Electrical</title>
+<link rel="icon" href="favicon.svg"/><link rel="stylesheet" href="styles.css"/></head>
+<body>
+<header>
+  <div class="container topbar">
+    <div class="brand"><span class="brand-title">Kings Electrical</span></div>
+    <a class="call-btn" href="tel:9316199202">📞 Call Now</a>
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+  </div>
+  <div class="container"><nav><ul><li class=''><a href='index.html'>Home</a></li>
+        <li class=''><a href='about.html'>About</a></li>
+        <li class=''><a href='services.html'>Services</a></li>
+        <li class=''><a href='gallery.html'>Gallery</a></li>
+        <li class='active'><a href='reviews.html'>Reviews</a></li>
+        <li class=''><a href='contact.html'>Contact</a></li></ul></nav></div>
+</header>
+<main>
+<section class="section"><div class="container">
+  <h2>Customer Reviews</h2>
+  <div class="review"><strong>Jane D.</strong><div class="stars">★★★★★</div><p class="small">Quick, professional, and left everything tidy. Highly recommend Kings Electrical.</p></div>
+  <div class="review"><strong>Mark R.</strong><div class="stars">★★★★☆</div><p class="small">Panel upgrade was smooth and well-explained. Fair pricing.</p></div>
+
+  <div class="card" style="margin-top:16px">
+    <h3>Leave a Review</h3>
+    <form name="reviews" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thankyou.html">
+      <input type="hidden" name="form-name" value="reviews">
+      <p hidden><label>Don’t fill this out: <input name="bot-field"></label></p>
+      <label for="rname">Your Name</label><input id="rname" name="name" required>
+      <label>Rating</label>
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+        <input type="radio" id="star1" name="rating" value="1" required><label for="star1">★</label>
+      </div>
+      <label for="rmessage">Your Review</label><textarea id="rmessage" name="message" rows="5" required></textarea>
+      <button type="submit">Submit Review</button>
+      <p class="small">Reviews are stored in your Netlify dashboard under <em>Forms → reviews</em>.</p>
+    </form>
+  </div>
+</div></section>
+</main>
+<footer><div class="container foot">
+  <div>© 2025 Kings Electrical — Shelbyville, TN</div>
+  <div><a href="tel:9316199202">(931) 619-9202</a> • <a href="mailto:Kingselectrical931@gmail.com">Kingselectrical931@gmail.com</a></div>
+</div></footer>
+<script src="script.js"></script>
+</body></html>

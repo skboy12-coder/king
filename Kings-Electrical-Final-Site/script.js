@@ -1,0 +1,1 @@
+function toggleMenu(){var ul=document.querySelector('nav ul'); if(ul){ul.classList.toggle('show');}}
